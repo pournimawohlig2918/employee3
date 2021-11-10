@@ -1,0 +1,80 @@
+<!-- include header -->
+<%-include('include/_header')%>
+
+<!--/ include header -->
+<!--Main Site-->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient">New Employee<i class="fas fa-user"></i></span>
+            </a>
+        </div>
+
+
+        <!-- form handling -->
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>User ID</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>@Email</th>
+                        <th>Salary</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%-include('include/_show')%>
+
+                </tbody>
+            </table>
+
+            <body>
+                <!-- <script> 
+                    // Check if the condition is true and then redirect.
+                    if (!pre) {
+                        window.location.href = "https://localhost:3000/#";
+                    }
+                </script> -->
+                <!-- <script>
+                    // onclick event is assigned to the #button element.
+                    document.getElementById("button").onclick = function () {
+                        window.location.href = "https://localhost:3000/#";
+                    };
+                </script> -->
+                <!-- <p>You will be redirected to google shortly.</p> -->
+                <!-- <script>
+                    setTimeout(function () {
+                        window.location.assign(
+                            "/#"); // The URL that will be redirected too.
+                    }); // The bigger the number the longer the delay.
+                </script> -->
+                <div class="pagination">
+                    <div class="pre">
+                        <a href="/">
+                            <i class="fas fa-angle-double-left"></i>Previous
+                            <span class="pag-content"></span>
+                        </a>
+                    </div>
+                    <div class="nxt">
+                        <a href="/">
+                            Next<i class="fas fa-angle-double-right"></i>
+                            <span class="pag-content"></span>
+                        </a>
+                    </div>
+                </div>
+            </body>
+        </form>
+
+
+    </div>
+</main>
+<!-- /Main Site-->
+
+
+<!-- include footer -->
+<%-include('include/_footer')%>
+
+<!--/ include footer -->
